@@ -16,10 +16,10 @@ class SendMailTask extends AsyncTask<String, Void, String> {
             sMsg = "Android ID: " + param1;
 
             try {
-                GMailSender sender = new GMailSender("ipsitasahu2001@gmail.com", "1ruchita123");
+                GMailSender sender = new GMailSender("xyz@gmail.com", "password");
                 sender.sendMail("This is Subject",
                         sMsg,
-                        "ipsitasahu2001@gmail.com",
+                        "xyz@gmail.com",
                         param2);
             } catch (Exception e) {
                 Log.e("SendMail", e.getMessage(), e);
